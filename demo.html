@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+.imlogo{
+	display: block;
+	width: 160px;
+	height: 80px;
+	background: #FF5E52 url(http://www.daqianduan.com/wp-content/uploads/2015/01/logo2.png) no-repeat 20px 20px;
+	-webkit-transition: background-position linear .2s;
+	-moz-transition: background-position linear .2s;
+	transition: background-position linear .2s;
+}
+.imlogo:hover{
+	background: #FF5E52 url(http://www.daqianduan.com/wp-content/uploads/2015/01/logo2.png) no-repeat 20px -48px;
+}
+</style>
+</head>
+<body>
+<a class="imlogo" href="#"></a>
+this is body
+<p  id="test">變更我</p>
+<button onclick="Click()">典籍我</button>
+</body>
+<script>
+	var x="World Hello";
+function Click(){
+  var str="",y;
+  var myobj={name:"PAUL",title:"Cheif Techonology officer",age:"27"};
+  for each(y in myobj){
+    str=str+y;
+  }
+  document.getElementById("test").innerHTML=str;
+}
+</script>
+</html>
